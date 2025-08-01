@@ -42,17 +42,17 @@ function eval(a, operator, b) {
 
     switch (operator) {
         case '+':
-            result = numA + numB;
+            result = Math.round(numA + numB);
             break;
         case '-':
-            result = numA - numB;
+            result = Math.round(numA - numB);
             break;
         case '*':
-            result = numA * numB;
+            result = Math.round(numA * numB);
             break;
         case '/':
             if (numB != 0) {
-                result = numA / numB;
+                result = Math.round(numA / numB);
             } else {
                 result = 'ERROR';
             }
